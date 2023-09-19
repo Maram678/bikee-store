@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{perspective: 600px;
+  font-family: serif;
+  text-transform: capitalize;}
+nav{width: 80%;
+margin: auto; z-index: 10; display: flex; }
+.div1{margin-left: 7px;}
+ .div1 div{
+    display: inline-block;
+    margin: 45px 0px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.div1-ho p{margin-top: 10px;}
+.div1-ho{
+  position: absolute;
+  color: #064444;
+width: 200px;
+height: 170px;
+border: 2px solid rgb(243, 187, 114);;
+background-color: white;
+ visibility: hidden
+
+}
+
+  .div1-ho ul{float: left; list-style: none;
+     margin-top: -15px; margin-left: 10px;
+     }
+ 
+
+.div2 div{
+display: inline-block;
+
+  margin: 45px 5px;
+  font-size: 20px;
+  text-align: center;
+ 
+}
+.div2 img{width: 40px;height: 40px; }
+
+.logo img{margin-top: 40px;}
+  .nav-links  {position: relative;padding:10px 15px;  }
+    .nav-links a{padding:33px 0px ; text-decoration: none; color: #064444;}
+ 
+.img1{width: 50px; height: 50px;
+padding-top: 3px; }
+.nav-links:before,
+.nav-links:after{
+content:"";
+position: absolute;
+border-style: solid; 
+left: 0;
+top:0; 
+transition: transform 0.2s;
+}
+.nav-links:before{
+    border-width: 0 2px;
+    height: 100%; 
+    width: 95%;
+    transform: scale3d(1,0,1);
+}
+.nav-links:hover:before{
+ color:  rgb(243, 187, 114);  
+ transform: scale3d(1,1,1);
+}
+.nav-links:after{
+border-width: 2px 0;
+height: 91%; 
+width: 97%;
+transform: scale3d(0,1,1);
+transform-origin: left;
+}
+.nav-links:hover:after{
+ transform: scale3d(1,1,1);
+ transition-delay:0.2s;
+ color:  rgb(243, 187, 114);;
+ 
+
+}
+.nav-links:hover .div1-ho{visibility: visible;}
+
+/* ////////////////////////////////////////////////////////////////////////////sec1///////////////////////////////////////////////////////////////////////////////// */
+.item-sec1{
+    margin: auto;
+    width: 80%;
+     height: 77vh;
+    background-color: rgb(20, 59, 78);
+    background-size: cover  ;
+  
+}
+  .sec1 img{
+width: 400px;
+height: 400px;
+margin-top: 40px;
+margin-left: 800px;
+
+  position: absolute;
+  z-index: 12;
+
+}
+.sec1-info{
+   padding: 80px;
+   color: white;
+}
+.sec1-info p{font-size: 80px;}
+.sec1-info button{ width: 150px;
+ height: 30px;
+ background-color: rgb(243, 187, 114);
+text-align: center;
+color: white;
+border:none}
+
+
+
+/* ///////////////////////////////////////////sec1/////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////sec2/////////////////////////////////////////////////////////////////// */
+
+.sec2-parent{width: 100%;}
+.sec2{width: 80%; margin: auto;
+  margin-top: 0px; display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center; }
+
+.title1{text-align: center;}
+.line1{width: 100px; height: 3px; background-color:  rgb(20, 59, 78); margin: auto; margin-top: 10px;}
+.header-sec2{margin-top: 130px; width: 100%; height: 100px;}
+.header-sec2:hover .line1{transform: scaleX(1.5); transition: 1s;}
+.sec2-item{
+ width: 24%;
+ height:300px;
+margin-top: 10px;
+box-shadow:10px 10px 5px 0.5px rgb(20, 59, 78);}
+.sec2-item img{width: 100%; height: 200px; margin-top: 55px;  }
+.icon1-overlay{ position: absolute;margin-top: -70px;margin-left: 50px; background-color: rgb(243, 187, 114);
+   font-size: 25px; visibility: hidden; }
+.icon1-overlay i{padding: 10px 5px; color: #ffffff; }
+.sec2-item:hover .icon1-overlay{visibility: visible;}
+.imgofitem{
+  background-color: #ffffff;
+  width: 100%;
+   text-align: center;position: relative; }
+  .sec2-info span{font-size: 20px;}
+  .imgofitem P{position: absolute; font-size: 30PX; padding: 20PX;}
+  
+  /* /////////////////////////////////////////////////////////////////// sec2////////////////////////////////////////////////// */
+  /* /////////////////////////////////////////////////////////////////// sec3////////////////////////////////////////////////// */
+.sec3{width: 80%; margin: auto; display: flex; justify-content: space-between; margin-top: 200px;}
+.left-side{width: 50%; height:300px; background-color: rgb(20, 59, 78);padding: 20px; color: #ffffff;}
+.div1-right-side{width: 23%; height: 300px; background-image: url("../images/1.jpg"); 
+   background-size: cover; background-repeat: no-repeat;transition-duration: 0.5s; }
+.div2-right-side{width: 23%; height: 300px;background-image: url('../images/2.jpg');
+   background-size: cover; background-repeat: no-repeat; transition-duration: 0.5s;}
+.lines-parent{ width: 40%; margin-left:auto;  display:flex; justify-content:end; justify-content: space-between; 
+margin-top: 30px;}
+.lines{width: 50px; height: 3px; background-color:  rgb(243, 187, 114)}
+.div1-right-info{padding: 30px; font-size: 20px; color: #ffffff; }
+.paragraph{margin-top: 20px; line-height: 30px;}
+.div2-right-side:hover{transform: scale(1.1); }
+.div1-right-side:hover{transform: scale(1.1);  }
+  /* /////////////////////////////////////////////////////////////////// sec3////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////// sec4////////////////////////////////////////////////// */
+
+.sec4{width: 90%;  margin: auto; display: grid; 
+  grid-template-columns: 21% 21% 21% 21% 21%; 
+  margin-top: 199px;position: relative; 
+   overflow: hidden;
+  column-count: 4;
+column-rule: 10px; 
+ border-radius: 5px;
+ margin-right: 90px;
+ }
+
+.sec4-item img{ 
+  width: 75px; height: 75px;
+  padding: 10px;
+margin-left: 10px; background-color: rgb(20, 59, 78); border-radius: 7px;}
+.icons{width: 100px; height: 80px; overflow: hidden;}
+.sec4-icon1 img{   position: absolute; animation-duration: 0.5s;}
+.sec4-item:hover .sec4-icon1 img{
+
+  animation-name: change;
+ 
+  animation-iteration-count: 1;
+  animation-fill-mode:both;
+}
+@keyframes change {
+  0%{top: 0;}
+  100%{margin-top: -80px; display: none; }
+}
+.sec4-info{margin-top: 10px; text-align: center; font-size: 20px;margin-right: 88px; }
+.sec4-icon2 img{margin-top: 96px; background-color:  rgb(243, 187, 114) ; animation-duration: 0.5s;}
+
+.sec4-item:hover .sec4-icon2 img{
+
+  animation-name: change2;
+  
+  animation-iteration-count: 1;
+  animation-fill-mode:both;
+}
+@keyframes change2 {
+  0%{display: none; }
+  80%{visibility: visible;}
+  100%{margin-top: -0.5px;  }
+}
+.spans{width: 1px;
+height: 150px; background-color: rgb(20, 59, 78); float: left; overflow: auto; margin-right:70px;}
+.itemm{margin-left:70px ;}
+
+
+
+
+
+ /* /////////////////////////////////////////////////////////////////// sec4////////////////////////////////////////////////// */
+
+  /* /////////////////////////////////////////////////////////////////// sec5////////////////////////////////////////////////// */
+  .title2{text-align: center;}
+  .line2{width: 100px; height: 3px; background-color:  rgb(20, 59, 78); margin: auto; margin-top: 100px;}
+  .sec5-sections {width: 80%; 
+   display: grid;
+    grid-template-columns: 13% 13% 10% 10%; 
+    margin-left: 450px; 
+  list-style: none; }
+  .sec5-items{width: 80%; margin: auto; 
+    display: grid; grid-template-columns: 30% 30% 30% ;
+    grid-template-rows: 350px 350px;
+    row-gap: 100px;
+    column-gap: 50px;
+   }
+   .sec5-content{width: 100%; height:420px;margin-top: 30px; }
+  .item-img img{width: 300px;}
+  .sec5-item{position: relative; }
+
+  .sec5-overlay{
+  visibility: hidden;
+        position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scalex(0);
+    background-image: url(../images/08.jpg);
+    background-size: cover;
+    transition-duration:  0.3s;
+
+ }
+
+.sec5-overlay i{float: left; font-size: 40px; padding: 3px; background-color:rgb(255, 255, 255) ;}
+.sec5-icons{margin:150px 60px }
+.sec5-content:hover .sec5-overlay{
+  visibility: visible;  
+transform: scalex(1);
+   width: 100%;
+    height: 100%; 
+  }
+
+    .sec5-item-info ul li{float: left; list-style: none; }
+    .sec5-item-info ul{display: inline-block;}
+    .sec5-item-info{padding: 20px;}
+.sec5-item-info p{line-height: 35px;}
+.p2{font-weight: bold; font-size: larger;}
+.sec5-content:hover{ box-shadow: 0px 14px 14px 0px rgba(6, 68, 68, 0.2)}
+
+  
+
+
+
+   /* /////////////////////////////////////////////////////////////////// sec5////////////////////////////////////////////////// */
